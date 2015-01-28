@@ -1,3 +1,5 @@
+# **THIS REPOSITORY MOVED TO https://github.com/Miage-Paris-Ouest/m120142015-gymtonik**
+
 Rapport d'analyse du projet ( GymTonik )
 =========
 
