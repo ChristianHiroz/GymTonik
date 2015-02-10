@@ -1,0 +1,14 @@
+@startuml
+hide footbox
+actor Utilisateur
+
+title Diagramme de séquence de le connexion
+
+Utilisateur -> User: connection(String username, String password)
+
+alt Paramètres valides
+    Utilisateur <-- User: OK
+else Paramètres invalides
+    Utilisateur <-- User: new IllegalArgumentException()
+end
+@enduml

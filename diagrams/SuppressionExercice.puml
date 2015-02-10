@@ -1,0 +1,9 @@
+@startuml
+hide footbox
+actor User
+
+title Diagramme de séquence de modification d'un exercice
+
+User -> Seance: deleteTraining(Exercise exercice)
+
+@enduml

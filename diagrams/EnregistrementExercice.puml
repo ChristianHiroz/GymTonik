@@ -1,0 +1,14 @@
+@startuml
+hide footbox
+actor User
+
+title Diagramme de séquence de l'enregistrement d'exercice
+
+User -> Seance: addTraining(new Exercise())
+
+alt Paramètres valides
+    User <-- Seance: OK
+else Paramètres invalides
+    User <-- Seance: new IllegalArgumentException()
+end
+@enduml

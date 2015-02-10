@@ -1,0 +1,22 @@
+@startuml
+hide footbox
+actor Utilisateur
+
+title Diagramme de séquence de l'inscription
+
+Utilisateur -> User: new User()
+
+alt Données valides
+
+    Utilisateur <-- User: sendValidationEmail()
+
+    Utilisateur -> User: validateEmail()
+
+    Utilisateur <-- User: OK
+
+else Données invalides
+
+    Utilisateur <-- User: new IllegalArgumentException()
+
+end
+@enduml

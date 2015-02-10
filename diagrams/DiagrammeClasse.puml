@@ -1,0 +1,58 @@
+@startuml
+
+interface IUser{
+    String username
+    String username_canonical
+    String email
+    String email_canonical
+    String password
+    String salt
+    Integer height
+    Integer weight
+    Integer timeSleep
+    void createSession()
+    void setSession(Session session)
+    bool deleteSession(Session session)
+    void setWeight()
+    void setTimeSleep()
+}
+abstract class AUser
+class User
+class Performance
+class Exercise
+class Session{
+    DateTime dateProgram
+    bool perform
+    Performance calculatePerformance(User user)
+    void addTraining()
+    void deleteTraining(Training training)
+    void clearTraining()
+    void setTraining(Training training)
+    void runTraining()
+}
+interface ITraining {
+    Integer length
+    String name
+    String explanation
+}
+abstract class ATraining
+interface IBodyPart {
+    String name
+    String description
+}
+abstract class AMuscle
+class Muscle
+
+
+AUser <|-- User
+IUser <|--- AUser
+ITraining <|-- ATraining
+ATraining <|-- Exercise
+Session o-- Performance
+Session *-- ITraining
+IBodyPart <|-- AMuscle
+AMuscle <|-- Muscle
+ITraining *-- IBodyPart
+IUser o-- Session
+
+@enduml

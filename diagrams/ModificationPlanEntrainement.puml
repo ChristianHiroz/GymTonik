@@ -1,0 +1,7 @@
+@startuml
+hide footbox
+actor User
+
+User->Session: updateTraining()
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+hide footbox
+actor User
+
+title Diagramme de séquence d'enregistrement du travail effectué
+
+User->Seance: runTraining(Exercice)
+Seance->User: OK
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+hide footbox
+actor User
+
+title Diagramme de séquence d'enregistrement\net de modification des autres mesures
+
+User->User: setWeight()
+User->User: setHeight()
+
+@enduml
