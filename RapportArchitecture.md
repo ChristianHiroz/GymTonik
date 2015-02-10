@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Rapport d'architecture du projet ( GymTonik )
 ##1. Présentation du projet
 L’utilisateur souhaite avoir une application qui permet le suivi et la mise en perspective des progrès pour la pratique d’un sport. 
@@ -123,3 +124,6 @@ Vu que nous utilisons un ORM, le diagramme de donnée correspondant au diagramme
 
 
 
+=======
+#Rapport d'architecture du projet ( GymTonik )
+>>>>>>> 7592142036591282940b4526548ed1ffebd3cca9
